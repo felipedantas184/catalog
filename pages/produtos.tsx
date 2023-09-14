@@ -1,5 +1,5 @@
-import Layout from '@/layout'
-import ProductsList from '@/components/Products'
+import ProductsList from "@/components/Products"
+import Layout from "@/layout"
 
 import { collection, getDocs } from "firebase/firestore";
 import fireDB from "@/firebase/initFirebase";
@@ -24,7 +24,7 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Home({products}:any) {
+export default function ProductsPage({products}:any) {
   return (
     <>
       <Layout>
